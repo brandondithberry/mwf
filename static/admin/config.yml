@@ -15,8 +15,8 @@ public_folder: /img
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
-  - label: 'Site settings'
-    name: 'site'
+  - label: 'Settings'
+    name: 'settings'
     files:
       - label: 'Info'
         name: 'info'
@@ -32,6 +32,13 @@ collections:
               widget: string,
               hint: 'This is used as descriptive text for links that link to this site',
             }
+          - { label: Logo, name: sitelogo, widget: image, hint: 'This is used for the site logo' }
+          - {
+              label: Brandmark,
+              name: sitemark,
+              widget: image,
+              hint: 'This is used for the site favicon and condensed logos',
+            }
           - {
               label: Site Language,
               name: sitelang,
@@ -39,6 +46,14 @@ collections:
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
+      - label: 'Design'
+        name: 'design'
+        file: 'content/site/design.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - { label: Google Fonts, name: googlefont, widget: string, hint: 'Add your Google Font link' }
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
@@ -48,7 +63,7 @@ collections:
     # editor:
     #   preview: true
     fields:
-      - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: "YYYY-MM-DD", time_format: false }
+      - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
