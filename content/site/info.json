@@ -1,5 +1,7 @@
 {
   "sitename": "MWF Guitars & Music",
   "sitedescription": "MWF Guitars is a full service guitar and bass guitar service center and custom guitar cable maker based in Willis, TX.",
-  "sitelang": "en-US"
+  "sitelang": "en-US",
+  "sitelogo": "/img/mwf-guitars-logo.png",
+  "sitemark": "/img/mwf-guitars-logo.png"
 }
