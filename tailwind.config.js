@@ -10,7 +10,8 @@ module.exports = {
     darkMode: 'class',
     extend: {
       fontFamily: {
-        sans: ['Inter']
+        sans: ['Work Sans'],
+        serif: ['Noto Serif']
       },
       colors: {
         gray: {

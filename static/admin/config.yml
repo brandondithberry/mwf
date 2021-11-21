@@ -46,14 +46,6 @@ collections:
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
-      - label: 'Design'
-        name: 'design'
-        file: 'content/site/design.json'
-        format: 'json'
-        editor:
-          preview: false
-        fields:
-          - { label: Google Fonts, name: googlefont, widget: string, hint: 'Add your Google Font link' }
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
