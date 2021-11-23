@@ -32,6 +32,12 @@ collections:
               widget: string,
               hint: 'This is used as descriptive text for links that link to this site',
             }
+          - {
+              label: Announcement,
+              name: announcement,
+              widget: string,
+              hint: 'Change the text of your announcement bar.',
+            }
           - { label: Logo, name: sitelogo, widget: image, hint: 'This is used for the site logo' }
           - {
               label: Brandmark,
