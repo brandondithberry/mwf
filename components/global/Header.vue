@@ -1,32 +1,34 @@
 <template>
-  <header>
+  <div>
     <div class="announcement">
-      <h5>{{ info.announcement }}</h5>
+      <p>{{ info.announcement }} <nuxt-link to="/quote">Request a Quote</nuxt-link></p>
     </div>
-    <div class="container">
-      <div>
-        <nav>
-          <ul>
-            <li><NuxtLink to="/">Home</NuxtLink></li>
-            <li><NuxtLink to="/repairs">Repairs</NuxtLink></li>
-            <li><NuxtLink to="/lessons">Lessons</NuxtLink></li>
-          </ul>
-        </nav>
+    <header>
+      <div class="container">
+        <div>
+          <nav>
+            <ul>
+              <li><nuxt-link to="/">Home</nuxt-link></li>
+              <li><nuxt-link to="/repairs">Repairs</nuxt-link></li>
+              <li><nuxt-link to="/lessons">Lessons</nuxt-link></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <nuxt-link to="/"><img :src="info.sitelogo" alt="MWF Guitars Logo" class="logo" /></nuxt-link>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
+              <li><nuxt-link to="/about">About</nuxt-link></li>
+              <li><nuxt-link to="/contact">Contact</nuxt-link></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div>
-        <NuxtLink to="/"><img :src="info.sitelogo" alt="MWF Guitars Logo" class="logo" /></NuxtLink>
-      </div>
-      <div>
-        <nav>
-          <ul>
-            <li><NuxtLink to="/portfolio">Portfolio</NuxtLink></li>
-            <li><NuxtLink to="/about">About</NuxtLink></li>
-            <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+    </header>
+  </div>
 </template>
 
 <script>
@@ -43,15 +45,27 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.announcement {
+  background: #232122;
+  padding: 10px;
+  text-align: center;
+}
+
+.announcement p,
+.announcement a {
+  font-size: 0.9rem;
+  color: white;
+}
+
 header {
   padding: 10px;
 }
 
 .logo {
-  width: 140px;
+  width: 120px;
 }
 
-div,
+header div,
 nav ul {
   display: flex;
   place-content: center;

@@ -19,39 +19,41 @@ export default {
 <style scoped>
 .banner {
   display: block;
-  text-align: center;
+  text-align: left;
   background-position: center;
   background-size: cover;
 }
 
 .overlay {
   display: block;
-  background: #00000099;
+  background: linear-gradient(90deg, #000000cc, #00000000);
   width: 100%;
   height: 100%;
 }
 
 .inner {
-  max-width: 500px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 12% 20px;
+  padding: 14% 20px;
 }
 
 h2 {
   color: white;
+  max-width: 440px;
 }
 
 h4 {
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  max-width: 440px;
 }
 
 .btn {
   display: inline;
-  padding: 15px 20px;
-  background: black;
-  color: white;
-  border: none;
-  margin: 10px;
+  transition: 0.4s ease;
+}
+
+.btn:not(:last-child) {
+  margin-right: 20px;
 }
 </style>  
