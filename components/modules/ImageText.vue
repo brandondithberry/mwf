@@ -29,7 +29,7 @@ export default {
   display: block;
   border-radius: 10px;
   padding: 70% 30px 30px 30px;
-  background: linear-gradient(#00000000, #000000ee);
+  background: linear-gradient(20deg, #000000ee, #00000000);
   width: 100%;
   height: 100%;
 }

@@ -16,7 +16,7 @@
           :description="'Expert luthier services.'"
         />
         <image-text
-          :bg="'0% 100% / 100% url(\'/img/acoustic.jpg\')'"
+          :bg="'0% 100% / 100% url(\'/img/lessons.jpg\')'"
           :heading="'Music Lessons'"
           :description="'Rekindle your passion.'"
         />
