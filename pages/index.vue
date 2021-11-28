@@ -9,19 +9,19 @@
       />
     </section>
     <section>
-      <div class="contain grid-cols-3 gap-7 py-14">
+      <div class="contain grid-cols-3 gap-7 py-16">
         <image-text
           :bg="'50% 80% / 100% url(\'/img/clamped-acoustic.jpg\')'"
           :heading="'Repair & Cleaning'"
           :description="'Expert luthier services.'"
         />
         <image-text
-          :bg="'0% 60% / 170% url(\'https://images.pexels.com/photos/4708872/pexels-photo-4708872.jpeg\')'"
+          :bg="'0% 100% / 100% url(\'/img/acoustic.jpg\')'"
           :heading="'Music Lessons'"
           :description="'Rekindle your passion.'"
         />
         <image-text
-          :bg="'0% 60% / 170% url(\'/img/custom.jpg\')'"
+          :bg="'50% 80% / 100% url(\'/img/custom.jpg\')'"
           :heading="'Customizations'"
           :description="'Bring your dreams to life.'"
         />
