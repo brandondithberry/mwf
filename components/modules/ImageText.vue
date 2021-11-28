@@ -2,10 +2,10 @@
   <div class="image-text" :style="{ background: bg }">
     <nuxt-link :to="{ link }">
       <div class="overlay">
-        <div class="inner">
-          <h3>{{ heading }}</h3>
-          <p>{{ description }}</p>
-        </div>
+        <h4>
+          <b>{{ heading }}</b>
+        </h4>
+        <p>{{ description }}</p>
       </div>
     </nuxt-link>
   </div>
@@ -28,8 +28,8 @@ export default {
 .overlay {
   display: block;
   border-radius: 10px;
-  padding: 50% 30px 30px 30px;
-  background: linear-gradient(#00000000, #000000cc);
+  padding: 70% 30px 30px 30px;
+  background: linear-gradient(#00000000, #000000ee);
   width: 100%;
   height: 100%;
 }
@@ -38,11 +38,11 @@ a {
   border-radius: 10px;
 }
 
-h3 {
+h4 {
   color: white;
 }
 
 p {
-  color: white;
+  margin-top: 0;
 }
 </style>

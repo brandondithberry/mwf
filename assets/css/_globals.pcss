@@ -13,9 +13,9 @@ body {
 }
 
 .container {
-  display: flex;
-  max-width: 1100px;
-  place-items: center;
-  place-content: center;
-  margin: 0 auto;
+  @apply flex place-content-center max-w-screen-lg;
+}
+
+.contain {
+  @apply grid place-content-center place-items-stretch m-auto max-w-screen-lg;
 }

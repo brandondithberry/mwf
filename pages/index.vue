@@ -9,21 +9,21 @@
       />
     </section>
     <section>
-      <div class="flex place-content-center gap-6 p-14">
+      <div class="contain grid-cols-3 gap-7 py-14">
         <image-text
-          :bg="'0% 60% / 170% url(\'~/static/img/clamped-acoustic.jpg\')'"
-          :heading="'Please mom'"
-          :description="'Don\'t make me put my laptop away.'"
+          :bg="'50% 80% / 100% url(\'/img/clamped-acoustic.jpg\')'"
+          :heading="'Repair & Cleaning'"
+          :description="'Expert luthier services.'"
         />
         <image-text
           :bg="'0% 60% / 170% url(\'https://images.pexels.com/photos/4708872/pexels-photo-4708872.jpeg\')'"
-          :heading="'Please mom'"
-          :description="'Don\'t make me put my laptop away.'"
+          :heading="'Music Lessons'"
+          :description="'Rekindle your passion.'"
         />
         <image-text
-          :bg="'0% 60% / 170% url(\'https://images.pexels.com/photos/4708872/pexels-photo-4708872.jpeg\')'"
-          :heading="'Please mom'"
-          :description="'Don\'t make me put my laptop away.'"
+          :bg="'0% 60% / 170% url(\'/img/custom.jpg\')'"
+          :heading="'Customizations'"
+          :description="'Bring your dreams to life.'"
         />
       </div>
     </section>
