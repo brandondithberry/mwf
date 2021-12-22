@@ -1,31 +1,20 @@
 <template>
   <div>
-    <div class="announcement">
-      <p>{{ info.announcement }} <nuxt-link to="/quote">Request a Quote</nuxt-link></p>
-    </div>
     <header>
-      <div class="container">
-        <div>
-          <nav>
-            <ul>
-              <li><nuxt-link to="/">Home</nuxt-link></li>
-              <li><nuxt-link to="/repairs">Repairs</nuxt-link></li>
-              <li><nuxt-link to="/lessons">Lessons</nuxt-link></li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <nuxt-link to="/"><img :src="info.sitelogo" alt="MWF Guitars Logo" class="logo" /></nuxt-link>
-        </div>
-        <div>
-          <nav>
-            <ul>
-              <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
-              <li><nuxt-link to="/about">About</nuxt-link></li>
-              <li><nuxt-link to="/contact">Contact</nuxt-link></li>
-            </ul>
-          </nav>
-        </div>
+      <div>
+        <nuxt-link to="/"><img :src="info.sitelogo" alt="MWF Guitars Logo" class="logo" /></nuxt-link>
+      </div>
+      <div>
+        <a class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div>
+        <nuxt-link to="quote" class="btn cta">Get a Quote</nuxt-link>
       </div>
     </header>
   </div>
@@ -58,7 +47,20 @@ export default {
 }
 
 header {
+  display: flex;
   padding: 10px;
+  max-width: 1024px;
+  margin: 0 auto;
+  place-content: space-between;
+  place-items: center;
+}
+
+header .menu-icon span {
+  display: block;
+  margin: 10px 0;
+  background: black;
+  width: 70px;
+  height: 2px;
 }
 
 .logo {
@@ -68,8 +70,6 @@ header {
 header div,
 nav ul {
   display: flex;
-  place-content: center;
-  place-items: center;
 }
 
 nav li a {
@@ -80,8 +80,6 @@ nav li a {
 
 .cta {
   display: block;
-  padding: 10px 20px;
-  background: black;
-  color: white;
+  padding: 12px 25px;
 }
 </style>

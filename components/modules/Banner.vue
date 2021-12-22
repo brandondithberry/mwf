@@ -22,6 +22,8 @@ export default {
   text-align: left;
   background-position: center;
   background-size: cover;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .overlay {
@@ -32,9 +34,8 @@ export default {
 }
 
 .inner {
-  max-width: 1100px;
   margin: 0 auto;
-  padding: 14% 20px;
+  padding: 14% 5%;
 }
 
 h2 {
