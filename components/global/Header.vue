@@ -34,19 +34,11 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.announcement {
-  background: #232122;
-  padding: 10px;
-  text-align: center;
-}
-
-.announcement p,
-.announcement a {
-  font-size: 0.9rem;
-  color: white;
-}
-
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   padding: 10px;
   max-width: 1024px;
