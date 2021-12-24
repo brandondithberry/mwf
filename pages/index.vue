@@ -9,7 +9,7 @@
       />
     </section>
     <section>
-      <div class="contain grid-cols-3 gap-7 py-16">
+      <div class="contain grid-cols-3 gap-10 p-10" style="background: #fff">
         <image-text
           :bg="'50% 80% / 100% url(\'/img/clamped-acoustic.jpg\')'"
           :heading="'Repair & Cleaning'"
@@ -29,6 +29,12 @@
     </section>
   </main>
 </template>
+
+<style scoped>
+main {
+  background: #232122;
+}
+</style>
 
 <script>
 import Banner from '~/components/modules/Banner'

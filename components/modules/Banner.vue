@@ -2,7 +2,7 @@
   <div class="banner" :style="{ background: bg }">
     <div class="overlay">
       <div class="inner">
-        <h2>{{ title }}</h2>
+        <h1>{{ title }}</h1>
         <h4>{{ subtitle }}</h4>
         <a class="btn" v-for="btn in button" :key="btn.text" :href="btn.link">{{ btn.text }}</a>
       </div>
@@ -22,7 +22,7 @@ export default {
   text-align: left;
   background-position: center;
   background-size: cover;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -38,15 +38,16 @@ export default {
   padding: 14% 5%;
 }
 
-h2 {
+h1 {
   color: white;
-  max-width: 440px;
+  max-width: 480px;
+  line-height: 120%;
 }
 
 h4 {
   color: white;
   margin-bottom: 40px;
-  max-width: 440px;
+  max-width: 480px;
 }
 
 .btn {
