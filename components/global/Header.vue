@@ -87,9 +87,9 @@ header .menu-icon:hover {
 
 header .menu-icon .text {
   display: block;
-  background: white;
-  color: black;
-  border: 2px solid white;
+  background: #ab892f;
+  color: #fff;
+  border: 2px solid #ab892f;
   padding: 5px;
   width: 100%;
   text-align: center;
@@ -98,7 +98,7 @@ header .menu-icon .text {
 
 header .menu-icon .line {
   display: inline-block;
-  background: white;
+  background: #ddd;
   height: 100%;
   width: 2px;
   margin: 0;

@@ -9,22 +9,28 @@
       />
     </section>
     <section>
-      <div class="contain grid-cols-3 gap-10 p-10" style="background: #fff">
+      <div class="contain grid-cols-1 lg:grid-cols-3 gap-10 py-10">
         <image-text
-          :bg="'50% 80% / 100% url(\'/img/clamped-acoustic.jpg\')'"
+          :bg="'50% 75% / 100% url(\'/img/clamped-acoustic.jpg\')'"
           :heading="'Repair & Cleaning'"
           :description="'Expert luthier services.'"
         />
         <image-text
-          :bg="'0% 100% / 100% url(\'/img/lessons.jpg\')'"
+          :bg="'50% 20% / 100% url(\'/img/lessons.jpg\')'"
           :heading="'Music Lessons'"
           :description="'Rekindle your passion.'"
         />
         <image-text
-          :bg="'50% 80% / 100% url(\'/img/custom.jpg\')'"
+          :bg="'50% 50% / 100% url(\'/img/custom.jpg\')'"
           :heading="'Customizations'"
           :description="'Bring your dreams to life.'"
         />
+      </div>
+    </section>
+    <section class="testimonial">
+      <img class="bg-svg" src="/img/wood-white.svg" alt="" />
+      <div class="inside">
+        <h3>Full Confidence with MWF</h3>
       </div>
     </section>
   </main>
@@ -33,6 +39,24 @@
 <style scoped>
 main {
   background: #232122;
+}
+
+.testimonial {
+  border: 10px solid white;
+  padding: 10% 20px;
+}
+
+.testimonial .bg-svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial .inside {
+  display: block;
+  background: #35302b;
+  padding: 40px;
 }
 </style>
 

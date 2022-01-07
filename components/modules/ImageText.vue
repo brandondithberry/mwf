@@ -24,14 +24,19 @@ export default {
   text-align: left;
   background-position: center;
   background-size: cover;
-  filter: saturate(0%);
   transition: 0.4s ease;
+  border: 2px solid #ab892f;
+  box-sizing: content-box;
+}
+
+.image-text:after {
+  filter: grayscale(100%);
 }
 
 .overlay {
   display: block;
-  padding: 20% 0;
-  background: #232122dd;
+  padding-top: 20%;
+  background: #232122ee;
   width: 100%;
   height: 100%;
   transition: 0.4s ease;
@@ -43,11 +48,11 @@ export default {
 }
 
 .image-text:hover {
-  filter: saturate(100%);
+  filter: grayscale(0%);
 }
 
 .image-text:hover .overlay {
-  background: #232122bb;
+  background: #23212299;
 }
 
 h2 {
