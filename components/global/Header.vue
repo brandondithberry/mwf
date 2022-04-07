@@ -36,6 +36,7 @@ export default {
 
 <style lang="postcss" scoped>
 header {
+  @apply bg-dark;
   position: absolute;
   display: flex;
   top: 0;
@@ -46,7 +47,6 @@ header {
   color: white;
   letter-spacing: 2px;
   place-items: center;
-  background: #232122;
 }
 
 header div {
@@ -79,10 +79,6 @@ header .menu-icon {
   cursor: pointer;
   color: white;
   transition: 0.4s ease;
-}
-
-header .menu-icon:hover {
-  height: 50px;
 }
 
 header .menu-icon .text {

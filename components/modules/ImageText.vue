@@ -1,66 +1,78 @@
 <template>
-  <div class="image-text" :style="{ background: bg }">
-    <nuxt-link :to="{ link }">
-      <div class="overlay" :style="{ background: overlay }">
+  <div class="image-text">
+    <div v-if="type == 'over'" class="over" :style="{ background: bg }">
+      <nuxt-link :to="{ link }">
+        <div class="overlay" :style="{ background: overlay }">
+          <div class="text">
+            <h3>
+              <b>{{ heading }}</b>
+            </h3>
+            <h4>{{ description }}</h4>
+          </div>
+        </div>
+      </nuxt-link>
+    </div>
+    <div v-if="type == 'bottom'" class="bottom">
+      <nuxt-link :to="{ link }">
+        <div class="image" :style="{ backgroundImage: bg }"></div>
         <div class="text">
-          <h2>
+          <h3>
             <b>{{ heading }}</b>
-          </h2>
+          </h3>
           <h4>{{ description }}</h4>
         </div>
-      </div>
-    </nuxt-link>
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['heading', 'description', 'bg', 'overlay', 'link'],
+  props: {
+    heading: String,
+    description: String,
+    bg: String,
+    link: String,
+    type: {
+      default: 'over',
+      type: String,
+    },
+  },
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .image-text {
-  text-align: left;
-  background-position: center;
-  background-size: cover;
-  transition: 0.4s ease;
-  border: 2px solid #ab892f;
-  box-sizing: content-box;
+  @apply flex w-full h-full place-content-stretch place-items-stretch;
 }
 
-.image-text:after {
-  filter: grayscale(100%);
+.bottom {
+  @apply w-full h-full;
+
+  .image {
+    @apply w-full h-full;
+    background: no-repeat center center / cover;
+    height: 200px;
+  }
+
+  .text {
+    @apply w-full bg-secondary text-dark p-6;
+
+    h2,
+    h4 {
+      @apply m-0;
+    }
+  }
 }
 
 .overlay {
-  display: block;
-  padding-top: 20%;
-  background: #232122ee;
-  width: 100%;
-  height: 100%;
+  @apply w-full h-full;
+  background: #00000077;
   transition: 0.4s ease;
 }
 
-.text {
-  display: block;
-  padding: 30px;
-}
-
-.image-text:hover {
-  filter: grayscale(0%);
-}
-
-.image-text:hover .overlay {
-  background: #23212299;
-}
-
-h2 {
-  color: #fff;
-}
-
-h4 {
-  color: #efefef;
-  margin-top: 0;
+.overlay:hover {
+  background: #00000000;
+  backdrop-filter: scale(1.5);
 }
 </style>

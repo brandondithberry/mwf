@@ -22,7 +22,6 @@ export default {
   text-align: left;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -40,7 +39,7 @@ export default {
 
 h1 {
   color: white;
-  max-width: 480px;
+  max-width: 500px;
   line-height: 120%;
 }
 

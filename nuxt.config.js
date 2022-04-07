@@ -84,13 +84,15 @@ export default {
     extractCSS: true,
     postcss: {
       plugins: {
-        'postcss-preset-env': postcssPresetEnv({
-          stage: 1,
-          features: {
-            'nesting-rules': false
-          }
-        }),
-        'postcss-easing-gradients': postcssEasingGradients
+        'postcss-import': true,
+        'tailwindcss/nesting': {},
+        'postcss-nested': {},
+      },
+      preset: {
+        // Change the postcss-preset-env settings
+        autoprefixer: {
+          grid: true
+        }
       }
     },
     /*
@@ -141,8 +143,8 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/icon.png',
-      filename: 'icon.png'
+      source: 'static/favicon.png',
+      filename: 'favicon.png'
     },
     manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
     meta: {

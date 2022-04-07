@@ -7,7 +7,6 @@
 
 module.exports = {
   theme: {
-    darkMode: 'class',
     extend: {
       fontFamily: {
         sans: ['Work Sans'],
@@ -46,6 +45,9 @@ module.exports = {
           '700': 'var(--color-accent-700)',
           '800': 'var(--color-accent-800)',
           '900': 'var(--color-accent-900)'
+        },
+        dark: {
+          DEFAULT: 'var(--dark)'
         },
         gray: {
           '50': 'var(--color-gray-50)',
