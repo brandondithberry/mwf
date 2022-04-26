@@ -1,27 +1,23 @@
 <template>
   <div class="image-text">
     <div v-if="type == 'over'" class="over" :style="{ background: bg }">
-      <nuxt-link :to="{ link }">
-        <div class="overlay" :style="{ background: overlay }">
-          <div class="text">
-            <h3>
-              <b>{{ heading }}</b>
-            </h3>
-            <h4>{{ description }}</h4>
-          </div>
-        </div>
-      </nuxt-link>
-    </div>
-    <div v-if="type == 'bottom'" class="bottom">
-      <nuxt-link :to="{ link }">
-        <div class="image" :style="{ backgroundImage: bg }"></div>
+      <div class="overlay" :style="{ background: overlay }">
         <div class="text">
           <h3>
             <b>{{ heading }}</b>
           </h3>
           <h4>{{ description }}</h4>
         </div>
-      </nuxt-link>
+      </div>
+    </div>
+    <div v-if="type == 'bottom'" class="bottom">
+      <div class="image" :style="{ backgroundImage: bg }"></div>
+      <div class="text">
+        <h3>
+          <b>{{ heading }}</b>
+        </h3>
+        <h4>{{ description }}</h4>
+      </div>
     </div>
   </div>
 </template>

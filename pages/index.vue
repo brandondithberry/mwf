@@ -9,7 +9,7 @@
       />
     </section>
     <section>
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 py-8">
+      <div class="grid gap-4 py-4 grid-cols-1 lg:grid-cols-4 lg:gap-8 lg:py-8">
         <image-text
           :bg="'url(\'https://images.unsplash.com/photo-1519423836910-49d53e49398c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\')'"
           :heading="'Repair & Cleaning'"
@@ -100,8 +100,9 @@
     </section>
     <section>
       <Banner
-        :bg="'0% 60% / 170% url(\'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80\')'"
-        :title="'Your guitar is a great companion. Why not show it some love.'"
+        :bg="'0% 60% / 170% url(\'https://images.pexels.com/photos/4088015/pexels-photo-4088015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\')'"
+        :title="'Make your guitar your own with MWF customizations, upgrades and setups.'"
+        :subtitle="'MWF works with you to perfect your setup including the action, intonation and other aspects, ensuring you love the feel and sound of your guitar.'"
         :button="heroButtons"
       />
     </section>
@@ -110,10 +111,10 @@
 
 <style lang="postcss" scoped>
 .about {
-  @apply flex w-full place-items-stretch place-content-center;
+  @apply flex w-full place-items-stretch place-content-center flex-col lg:flex-row;
 
   .box {
-    @apply w-1/2 p-20 bg-white;
+    @apply p-6 bg-white lg:w-1/2 lg:p-20;
 
     h3,
     p {
@@ -122,16 +123,17 @@
   }
 
   .box:nth-child(2) {
+    @apply p-20;
     background: no-repeat center center / cover
       url('//images.pexels.com/photos/1539787/pexels-photo-1539787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   }
 }
 
 .testimonials {
-  @apply grid grid-cols-1 lg:grid-cols-3 gap-6 py-6 place-content-stretch place-items-stretch;
+  @apply grid grid-cols-1 gap-4 py-4 lg:grid-cols-3 lg:gap-6 lg:py-6 place-content-stretch place-items-stretch;
 
   .testimony {
-    @apply p-10 bg-gray-100 text-dark text-center;
+    @apply p-8 bg-gray-100 text-dark text-center lg:p-10;
 
     .dots {
       @apply flex place-content-stretch place-items-stretch mb-4 p-0 text-5xl text-gray-300 leading-5;
@@ -163,7 +165,7 @@ export default {
       heroButtons: [
         {
           text: 'Request a Quote',
-          link: '/quote',
+          link: '#connect',
         },
         {
           text: 'View Portfolio',

@@ -28,7 +28,7 @@
     @apply font-sans
       font-bold
       text-2xl
-      leading-tight
+      leading-normal
       tracking-normal;
   }
 
@@ -36,7 +36,7 @@
     @apply font-sans
       font-semibold
       text-xl
-      leading-tight
+      leading-normal
       tracking-normal;
   }
 
@@ -92,16 +92,6 @@
   a {
     color: var(--text-secondary);
     @apply transition-colors duration-200 ease-in-out;
-  }
-
-  .title {
-    color: var(--text-secondary);
-    @apply block text-2xl font-sans font-bold transition-colors duration-200 ease-in-out;
-  }
-
-  .subtitle {
-    color: var(--text);
-    @apply block text-xl font-sans font-bold transition-colors duration-200 ease-in-out;
   }
 
   .nuxt-content {
@@ -192,12 +182,6 @@
   /*! purgecss end ignore */
 
   @screen sm {
-    .title {
-      @apply text-4xl;
-    }
-    .subtitle {
-      @apply text-3xl;
-    }
     .nuxt-content {
       & ul {
         @apply ml-0;
@@ -207,7 +191,7 @@
 
   @screen md {
     h1 {
-      @apply text-4xl leading-none;
+      @apply text-4xl;
     }
 
     h2 {
@@ -225,10 +209,6 @@
     h5,
     h6 {
       @apply text-lg;
-    }
-
-    p {
-      @apply leading-relaxed;
     }
   }
 }
