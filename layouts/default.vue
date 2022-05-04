@@ -1,8 +1,9 @@
 <template>
-  <div class="wrapper">
-    <Menu />
-    <Header />
-    <nuxt />
-    <Footer />
+  <div>
+    <div class="wrapper">
+      <Header />
+      <nuxt />
+      <Footer />
+    </div>
   </div>
 </template>
