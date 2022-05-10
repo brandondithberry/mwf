@@ -4,12 +4,12 @@
       <Banner
         :bg="'0% 60% / 170% url(\'https://images.pexels.com/photos/4708872/pexels-photo-4708872.jpeg\')'"
         :title="'Reigniting the joy of owning and playing your guitar.'"
-        :subtitle="'Willis, Texas based Luthier  and Music Teacher providing guitar repair and service.'"
+        :subtitle="'Willis, Texas based Luthier and Music Teacher providing guitar repair, cleaning, customizations and parts.'"
         :button="heroButtons"
       />
     </section>
     <section>
-      <div class="grid gap-4 py-4 grid-cols-1 lg:grid-cols-4 lg:gap-8 lg:py-8">
+      <div class="grid gap-4 py-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:py-8">
         <image-text
           :bg="'url(\'https://images.unsplash.com/photo-1519423836910-49d53e49398c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\')'"
           :heading="'Repair & Cleaning'"
@@ -169,7 +169,7 @@ export default {
         },
         {
           text: 'View Portfolio',
-          link: '/portfolio',
+          link: '/projects',
         },
       ],
     }

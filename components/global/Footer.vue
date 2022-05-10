@@ -39,7 +39,7 @@
       <div class="menu">
         <nav>
           <nuxt-link to="/"><p>Home</p></nuxt-link>
-          <nuxt-link to="/portfolio"><p>Portfolio</p></nuxt-link>
+          <nuxt-link to="/projects"><p>projects</p></nuxt-link>
           <nuxt-link to="/#connect"><p>Get In Touch</p></nuxt-link>
           <nuxt-link to="/privacy-policy"><p>Privacy Policy</p></nuxt-link>
           <nuxt-link to="/terms-of-service"><p>Terms of Service</p></nuxt-link>

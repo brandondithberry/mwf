@@ -34,6 +34,6 @@ export default {
 }
 
 .inner {
-  @apply max-w-lg text-white;
+  @apply max-w-xl text-white;
 }
-</style>  
+</style>

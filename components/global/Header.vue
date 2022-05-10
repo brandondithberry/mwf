@@ -5,21 +5,21 @@
         <button type="button" class="close" @click="closeMenu">✕</button>
         <nav class="menu-box main-menu">
           <ul>
-            <li><nuxt-link to="/">Home</nuxt-link></li>
-            <li><nuxt-link to="/projects">Projects</nuxt-link></li>
-            <li><nuxt-link to="/lessons">Lessons</nuxt-link></li>
-            <li><nuxt-link to="/about">About</nuxt-link></li>
-            <li><nuxt-link to="/contact">Contact</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/">Home</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/projects">Projects</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/lessons">Lessons</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/about">About</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/contact">Contact</nuxt-link></li>
           </ul>
         </nav>
         <nav class="menu-box secondary-menu">
           <ul>
-            <li><nuxt-link to="/repairs">Repairs</nuxt-link></li>
-            <li><nuxt-link to="/maintenance">Maintenance</nuxt-link></li>
-            <li><nuxt-link to="/customizations">Customizations</nuxt-link></li>
-            <li><nuxt-link to="/replacement-parts">Replacement Parts</nuxt-link></li>
-            <li><nuxt-link to="/upgrades">Upgrades</nuxt-link></li>
-            <li><nuxt-link to="/consulting">Consulting</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/repairs">Repairs</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/maintenance">Maintenance</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/customizations">Customizations</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/replacement-parts">Replacement Parts</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/upgrades">Upgrades</nuxt-link></li>
+            <li @click="closeMenu"><nuxt-link to="/consulting">Consulting</nuxt-link></li>
           </ul>
         </nav>
       </div>
@@ -98,7 +98,7 @@ export default {
   }
 
   a:hover,
-  a.nuxt-link-active {
+  a.nuxt-link-exact-active {
     @apply border-b-2 border-secondary-100 opacity-40;
   }
 
@@ -117,7 +117,7 @@ export default {
 
 header {
   @apply bg-dark;
-  position: absolute;
+  position: fixed;
   display: flex;
   top: 0;
   left: 0;
