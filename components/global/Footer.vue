@@ -34,7 +34,7 @@
     </section>
     <section class="navigation">
       <div class="logo">
-        <nuxt-link to="/"><img src="img/mwf-guitars-logo.png" alt="Footer MWF Logo" /></nuxt-link>
+        <nuxt-link to="/"><img src="/img/mwf-guitars-logo.png" alt="Footer MWF Logo" /></nuxt-link>
       </div>
       <div class="menu">
         <nav>
