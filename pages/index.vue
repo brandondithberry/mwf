@@ -2,7 +2,7 @@
   <main>
     <section>
       <Banner
-        :bg="'0% 60% / 170% url(\'https://images.pexels.com/photos/4708872/pexels-photo-4708872.jpeg\')'"
+        :bg="'url(\'/img/playing.jpeg\')'"
         :title="'Reigniting the joy of owning and playing your guitar.'"
         :subtitle="'Willis, Texas based Luthier and Music Teacher providing guitar repair, cleaning, customizations and parts.'"
         :button="heroButtons"
@@ -51,7 +51,7 @@
     </section>
     <section class="testimonials">
       <div class="testimony">
-        <figure>
+        <figure class="max-w-md m-auto">
           <div class="dots">
             <div>•</div>
             <div>•</div>
@@ -68,7 +68,7 @@
         </figure>
       </div>
       <div class="testimony">
-        <figure>
+        <figure class="max-w-md m-auto">
           <div class="dots">
             <div>•</div>
             <div>•</div>
@@ -84,7 +84,7 @@
         </figure>
       </div>
       <div class="testimony">
-        <figure>
+        <figure class="max-w-md m-auto">
           <div class="dots">
             <div>•</div>
             <div>•</div>
@@ -168,7 +168,7 @@ export default {
           link: '#connect',
         },
         {
-          text: 'View Portfolio',
+          text: 'View Projects',
           link: '/projects',
         },
       ],

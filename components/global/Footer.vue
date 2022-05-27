@@ -39,7 +39,6 @@
       <div class="menu">
         <nav>
           <nuxt-link to="/"><p>Home</p></nuxt-link>
-          <nuxt-link to="/projects"><p>projects</p></nuxt-link>
           <nuxt-link to="/#connect"><p>Get In Touch</p></nuxt-link>
           <nuxt-link to="/privacy-policy"><p>Privacy Policy</p></nuxt-link>
           <nuxt-link to="/terms-of-service"><p>Terms of Service</p></nuxt-link>
@@ -54,10 +53,10 @@
 
 <style lang="postcss" scoped>
 .contact {
-  @apply flex bg-secondary-600 my-4 lg:my-6;
+  @apply grid grid-cols-1 lg:grid-cols-2 bg-secondary-600 my-4 lg:my-6;
 
   div {
-    @apply w-1/2 p-20;
+    @apply p-8 lg:p-20;
   }
 
   div:nth-child(1) {

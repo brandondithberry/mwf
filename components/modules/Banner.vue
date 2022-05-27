@@ -23,13 +23,14 @@ export default {
 <style lang="postcss" scoped>
 .banner {
   @apply flex h-auto place-content-center place-items-center;
-  background-position: center;
-  background-size: cover;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   margin: 0 auto;
 }
 
 .overlay {
-  @apply flex w-full h-full p-20 place-content-center items-center justify-start lg:py-48;
+  @apply flex w-full h-full place-content-center items-center justify-start px-6 py-14 lg:p-20 lg:py-48;
   background: linear-gradient(90deg, #000000cc, #00000000);
 }
 

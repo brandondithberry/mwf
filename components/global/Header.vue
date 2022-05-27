@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <Transition>
+  <!--<Transition>
       <div class="fullpage-menu" v-if="showMobileMenu">
         <button type="button" class="close" @click="closeMenu">✕</button>
         <nav class="menu-box main-menu">
@@ -23,13 +22,13 @@
           </ul>
         </nav>
       </div>
-    </Transition>
-    <header>
-      <div class="inside">
-        <div class="logo-box">
-          <nuxt-link to="/"><img :src="info.sitelogo" alt="MWF Guitars Logo" class="logo" /></nuxt-link>
-        </div>
-        <div>
+    </Transition>-->
+  <header>
+    <div class="inside">
+      <div class="logo-box">
+        <nuxt-link to="/"><img :src="info.sitelogo" alt="MWF Guitars Logo" class="logo" /></nuxt-link>
+      </div>
+      <!--<div>
           <a class="menu-icon" @click="openMenu">
             <span class="line"></span>
             <span class="line"></span>
@@ -39,10 +38,9 @@
             <span class="line"></span>
             <span class="text">MENU</span>
           </a>
-        </div>
-      </div>
-    </header>
-  </div>
+        </div>-->
+    </div>
+  </header>
 </template>
 
 <script>
@@ -117,12 +115,11 @@ export default {
 
 header {
   @apply bg-dark;
-  position: fixed;
   display: flex;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: auto;
   margin: 0 auto;
   color: white;
   letter-spacing: 2px;
@@ -131,12 +128,15 @@ header {
 
 header div {
   display: flex;
+  place-content: center;
+  place-items: center;
+  width: 100%;
 }
 
 header .inside {
   display: flex;
-  place-content: space-between;
-  align-items: flex-start;
+  place-content: center;
+  place-items: center;
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -145,12 +145,15 @@ header .inside {
 }
 
 header .logo-box {
+  width: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
 
 header .logo {
-  width: 120px;
+  width: auto;
+  height: 60px;
+  text-align: center;
 }
 
 header .menu-icon {
